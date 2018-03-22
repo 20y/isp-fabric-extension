@@ -5,6 +5,7 @@ module.exports = {
 	initObjects(fabric = this.getFabric()) {
 		fabric.ISPFabricCanvas            = require('./lib/objects/isp-fabric-canvas.js');
 		fabric.ISPFabricPage              = require('./lib/objects/isp-fabric-page.js');
+		fabric.ISPFabricGuideline         = require('./lib/objects/isp-fabric-guideline.js');
 		fabric.ISPShapeBookmark           = require('./lib/objects/isp-shape-bookmark.js');
 		fabric.ISPShapeBubble             = require('./lib/objects/isp-shape-bubble.js');
 		fabric.ISPShapeBubbleRound        = require('./lib/objects/isp-shape-bubble-round.js');
@@ -27,9 +28,11 @@ module.exports = {
 
 
 	initShim(fabric = this.getFabric()) {
+		require('./lib/shim/utils.js').init(fabric);
+		require('./lib/shim/intersection.js').init(fabric);
+		require('./lib/shim/object.js').init(fabric);
 		require('./lib/shim/i-text.js').init(fabric);
 		require('./lib/shim/image.js').init(fabric);
-		require('./lib/shim/object.js').init(fabric);
 
 		return fabric;
 	},
