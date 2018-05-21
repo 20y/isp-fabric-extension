@@ -29,8 +29,11 @@ module.exports = {
 
 	initShim(fabric = this.getFabric()) {
 		require('./lib/shim/utils.js').init(fabric);
+		require('./lib/shim/collection.js').init(fabric);
 		require('./lib/shim/intersection.js').init(fabric);
 		require('./lib/shim/object.js').init(fabric);
+		require('./lib/shim/group.js').init(fabric);
+		require('./lib/shim/static-canvas.js').init(fabric);
 		require('./lib/shim/i-text.js').init(fabric);
 		require('./lib/shim/image.js').init(fabric);
 
