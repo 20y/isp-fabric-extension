@@ -22,6 +22,7 @@ module.exports = {
 		fabric.ISPShapeOdnoklassnikiIcon  = require('./lib/objects/isp-shape-odnoklassniki-icon.js');
 		fabric.ISPShapeFbIcon             = require('./lib/objects/isp-shape-fb-icon.js');
 		fabric.ISPShapePlaceholderIcon    = require('./lib/objects/isp-shape-placeholder-icon.js');
+		fabric.ISPSilentImage             = require('./lib/objects/isp-silent-image.js');
 
 		return fabric;
 	},
