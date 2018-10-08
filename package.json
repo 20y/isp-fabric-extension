@@ -8,13 +8,13 @@
 	},
 	"contributors": [
 		{
-			"name": "Sereda Nikolay",
-			"email": "nikolai.sereda@vwell.su"
+			"name": "nsluny",
+			"email": "nsluny@gmail.com"
 		}
 	],
 	"dependencies": {
 		"fabric": "^2.1.0",
-		"isp-geometry": "git+http://guest:verywell@print2.sborka.biz:4917/git/eg/isp-geometry.git#master",
+		"isp-geometry": "https://github.com/eugenegantz/isp-geometry.git#master",
 		"lodash": "^4.2.1"
 	}
 }
